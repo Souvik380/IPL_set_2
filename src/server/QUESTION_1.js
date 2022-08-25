@@ -3,8 +3,7 @@ const fs=require("fs")
 
 async function QUESTION_1(){
     const files1=await csv().fromFile("../data/matches.csv")
-    const files2=await csv().fromFile("../data/deliveries.csv")
-
+    
     let obj={}
 
     for(let i=0;i<files1.length;i++){
