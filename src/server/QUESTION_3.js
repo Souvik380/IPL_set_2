@@ -23,17 +23,19 @@ async function QUESTION_3(){
             obj[match_id]={}
             obj[match_id][batsman]={}
             obj[match_id][batsman].runs=runs
-            obj[match_id][batsman].balls=balls
+            // obj[match_id][batsman].balls=balls
+            obj[match_id][batsman].balls=1
             obj[match_id][batsman].strike_rate=parseFloat(runs/balls)
 
         }else if(obj[match_id][batsman]===undefined){
             obj[match_id][batsman]={}
             obj[match_id][batsman].runs=runs
-            obj[match_id][batsman].balls=balls
+            // obj[match_id][batsman].balls=balls
+            obj[match_id][batsman].balls=1
             obj[match_id][batsman].strike_rate=parseFloat(runs/balls)
         }else{
             obj[match_id][batsman].runs+=runs
-            obj[match_id][batsman].balls+=balls
+            obj[match_id][batsman].balls+=1
             obj[match_id][batsman].strike_rate=parseFloat(runs/balls)
         }
 
